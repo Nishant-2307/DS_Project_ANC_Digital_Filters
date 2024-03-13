@@ -1,0 +1,42 @@
+clc;
+clear all;
+close all;
+
+filename = "C:\Users\jiyad\Downloads\sample_test.ogg";
+[audio,fs] = audioread(filename);
+save('sample_test_mat.mat', 'audio', 'fs');
+
+load sample_test_mat.mat
+
+audiowrite("sample_test.ogg",audio,fs);
+clear audio fs
+[audio,fs] = audioread('sample_test.ogg');
+
+audio_normalized = int16(audio * 32767); % Normalize
+audio_binary = dec2bin(typecast(audio_normalized(:), 'uint16'), 16); % Convert to binary
+binary_vector = audio_binary(:)'; % Reshape to vector for transmission
+
+%Binary to Audio
+binary_matrix = reshape(binary_vector, [], 16); % Reshape back to matrix
+audio_integers = bin2dec(binary_matrix); % Convert binary to decimal
+audio_reconstructed = typecast(uint16(audio_integers), 'int16'); % Typecast to int16
+audio_reconstructed_normalized = double(audio_reconstructed) / 32767; % Normalize to [-1, 1]
+
+% Save the reconstructed audio
+audiowrite('reconstructed_audio.wav', audio_reconstructed_normalized, fs);
+% playing the original and reconstructed audio
+sound(audio, fs); % Play original audio
+pause(length(audio)/fs + 1); % Wait for audio to finish plus a little extra
+sound(audio_reconstructed_normalized, fs); % Play reconstructed audio
+
+save val;
+
+
+
+
+
+
+
+
+
+
