@@ -1,0 +1,19 @@
+Value displayed with $fdisplay
+ 26
+00011010
+032
+1a
+Value displayed with $fwrite
+ 43 00101011 053 2b
+Value displayed with $fstrobe
+ 60
+00111100
+074
+3c
+Value displayed with $fmonitor
+ 60
+  0
+  1
+  2
+  3
+  4
