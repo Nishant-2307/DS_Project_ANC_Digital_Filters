@@ -1,0 +1,142 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Apr 20 19:22:51 2024
+# Process ID: 37504
+# Current directory: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15056 C:\Digital Filters\DS_Project_ANC_Digital_Filters\Basic Convolution\fir_trying.xpr
+# Log file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/vivado.log
+# Journal file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/OneDrive/Desktop/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/OneDrive/Desktop/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}}
+export_ip_user_files -of_objects  [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/OneDrive/Desktop/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/OneDrive/Desktop/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe}}
+export_ip_user_files -of_objects  [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_2 -dir {c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Filters/Filters.sim/sim_1/behav/xsim/Noise_bits.coe}] [get_ips blk_mem_gen_2]
+generate_target {instantiation_template} [get_files {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+generate_target all [get_files  {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_2] }
+export_ip_user_files -of_objects [get_files {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+launch_runs -jobs 10 blk_mem_gen_2_synth_1
+export_simulation -of_objects [get_files {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run blk_mem_gen_0_synth_1
+reset_run blk_mem_gen_1_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+launch_runs impl_1 -jobs 10
+set_property -dict [list CONFIG.Coe_File {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Filters/Filters.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+launch_runs -jobs 10 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}]
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}]
+set_property -dict [list CONFIG.Coe_File {C:/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe}] [get_ips blk_mem_gen_1]
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}] -no_script -sync -force -quiet
+launch_runs -jobs 10 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+close_design
+synth_design -rtl -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close_design
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

@@ -2,10 +2,6 @@
 2019.2
 Nov  6 2019
 21:57:16
-C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.srcs/sim_1/new/trial_BRAM_tb.v,1710348278,verilog,,,,trial1_tb,,,,,,,,
-C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1710348767,verilog,,C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v,,blk_mem_gen_0,,,,,,,,
-C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v,1710349037,verilog,,,,memory_read,,,,,,,,
-C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.srcs/sources_1/new/file_read.v,1710347986,verilog,,,,file_read,,,,,,,,
-C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.srcs/sources_1/new/trial_BRAM.v,1710348180,verilog,,C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.srcs/sim_1/new/trial_BRAM_tb.v,,trial1,,,,,,,,
-C:/Users/nisha/OneDrive/Desktop/Dig_Sys_proj/Week_1/Week_1.srcs/sources_1/new/write_data.v,1710347394,verilog,,,,tb1,,,,,,,,
+C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1713542641,verilog,,C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v,,blk_mem_gen_0,,,,,,,,
+C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v,1713549724,verilog,,,,clock_divider;memory_read,,,,,,,,

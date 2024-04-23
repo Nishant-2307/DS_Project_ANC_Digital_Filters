@@ -1,0 +1,816 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Apr 19 21:25:30 2024
+# Process ID: 30092
+# Current directory: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18496 C:\Digital Filters\DS_Project_ANC_Digital_Filters\Week_1\Week_1.xpr
+# Log file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/vivado.log
+# Journal file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/nisha/OneDrive/Desktop/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/../../AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store'; using path 'C:/Users/nisha/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1171.414 ; gain = 493.812
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}]
+WARNING: [Vivado 12-818] No files matched 'C:/Digital'
+WARNING: [Vivado 12-818] No files matched 'Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'
+export_ip_user_files -of_objects [get_files {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'C:/Digital'
+WARNING: [Vivado 12-818] No files matched 'Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_read' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+"xvlog --incr --relax -prj memory_read_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_read
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_read' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj memory_read_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_read
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xelab -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:16]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:17]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.memory_read
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot memory_read_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_read_behav -key {Behavioral:sim_1:Functional:memory_read} -tclbatch {memory_read.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_read.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module memory_read.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_read_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1219.977 ; gain = 33.652
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_read' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj memory_read_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_read
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xelab -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ena' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:16]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wea' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:17]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.memory_read
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot memory_read_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_read_behav -key {Behavioral:sim_1:Functional:memory_read} -tclbatch {memory_read.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_read.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module memory_read.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_read_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1280.559 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+[Fri Apr 19 21:30:00 2024] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/blk_mem_gen_0_synth_1/runme.log
+[Fri Apr 19 21:30:00 2024] Launched synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+generate_target Simulation [get_files {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}]
+WARNING: [Vivado 12-818] No files matched 'C:/Digital'
+WARNING: [Vivado 12-818] No files matched 'Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'
+export_ip_user_files -of_objects [get_files {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'C:/Digital'
+WARNING: [Vivado 12-818] No files matched 'Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/simulate.log"
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe' provided. It will be converted relative to IP Instance files '../../../../Week_1.sim/sim_1/behav/xsim/my_file.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe' provided. It will be converted relative to IP Instance files '../../../../Week_1.sim/sim_1/behav/xsim/my_file.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe' provided. It will be converted relative to IP Instance files '../../../../Week_1.sim/sim_1/behav/xsim/my_file.coe'
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+export_ip_user_files -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 10 blk_mem_gen_0_synth_1
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Fri Apr 19 21:32:04 2024] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_read' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj memory_read_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_read
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xelab -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.memory_read
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot memory_read_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_read_behav -key {Behavioral:sim_1:Functional:memory_read} -tclbatch {memory_read.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_read.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module memory_read.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_read_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1289.895 ; gain = 8.375
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Operating_Mode_A {READ_FIRST} CONFIG.Enable_A {Use_ENA_Pin}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 10 blk_mem_gen_0_synth_1
+[Fri Apr 19 21:34:02 2024] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_read' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj memory_read_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_read
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xelab -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.memory_read
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot memory_read_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_read_behav -key {Behavioral:sim_1:Functional:memory_read} -tclbatch {memory_read.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_read.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module memory_read.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_read_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1311.656 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_read' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj memory_read_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_read
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xelab -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.memory_read
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot memory_read_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_read_behav -key {Behavioral:sim_1:Functional:memory_read} -tclbatch {memory_read.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_read.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module memory_read.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_read_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1419.605 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Fri Apr 19 21:42:45 2024] Launched synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_read' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj memory_read_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_read
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xelab -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.memory_read
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot memory_read_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_read_behav -key {Behavioral:sim_1:Functional:memory_read} -tclbatch {memory_read.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_read.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module memory_read.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_read_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1622.605 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'memory_read' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/blk_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj memory_read_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-311] analyzing module memory_read
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+"xelab -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 91ddf5f6ff02473091a8facd2598ac29 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot memory_read_behav xil_defaultlib.memory_read xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.clock_divider
+Compiling module xil_defaultlib.memory_read
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot memory_read_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "memory_read_behav -key {Behavioral:sim_1:Functional:memory_read} -tclbatch {memory_read.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source memory_read.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module memory_read.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'memory_read_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1622.605 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: memory_read
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2012.750 ; gain = 226.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'memory_read' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:16]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/.Xil/Vivado-12968-hp/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/.Xil/Vivado-12968-hp/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:4]
+WARNING: [Synth 8-6104] Input port 'clk' has an internal driver [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:38]
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed. 
+WARNING: [Synth 8-3848] Net sclk in module/entity memory_read does not have driver. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:18]
+WARNING: [Synth 8-3848] Net dina in module/entity memory_read does not have driver. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'memory_read' (3#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2067.949 ; gain = 281.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2067.949 ; gain = 281.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2067.949 ; gain = 281.223
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2067.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ena'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'ena'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'wea'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'wea'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'e'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'e'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'counter1[3]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'counter1[3]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'counter1[2]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'counter1[2]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'counter1[1]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'counter1[1]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'counter1[0]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'counter1[0]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'dina[7]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'dina[7]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'dina[6]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'dina[6]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'dina[5]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'dina[5]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'dina[4]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'dina[4]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'dina[3]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'dina[3]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'dina[2]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'dina[2]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'dina[1]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'dina[1]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'dina[0]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'dina[0]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc:32]
+Finished Parsing XDC File [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/constrs_1/new/BRAM.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/memory_read_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2120.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2279.758 ; gain = 493.031
+16 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 2279.758 ; gain = 657.152
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2279.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'memory_read' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:16]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/.Xil/Vivado-12968-hp/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/.Xil/Vivado-12968-hp/realtime/blk_mem_gen_0_stub.v:6]
+ERROR: [Synth 8-685] variable 'mem_out' should not be used in output port connection [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:36]
+ERROR: [Synth 8-6156] failed synthesizing module 'memory_read' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2279.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2279.758 ; gain = 0.000
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: memory_read
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2279.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'memory_read' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:16]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/.Xil/Vivado-12968-hp/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/.Xil/Vivado-12968-hp/realtime/blk_mem_gen_0_stub.v:6]
+ERROR: [Synth 8-685] variable 'mem_out' should not be used in output port connection [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:36]
+ERROR: [Synth 8-6156] failed synthesizing module 'memory_read' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/new/BRAM_wrapper.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2279.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+3 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe' provided. It will be converted relative to IP Instance files '../../../../Week_1.sim/sim_1/behav/xsim/my_file.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.sim/sim_1/behav/xsim/my_file.coe' provided. It will be converted relative to IP Instance files '../../../../Week_1.sim/sim_1/behav/xsim/my_file.coe'
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 45a5b06e2051c471; cache size = 0.458 MB.
+catch { [ delete_ip_run [get_ips -all blk_mem_gen_0] ] }
+INFO: [Project 1-386] Moving file 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' from fileset 'blk_mem_gen_0' to fileset 'sources_1'.
+export_ip_user_files -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci'
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Fri Apr 19 23:38:23 2024] Launched synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/synth_1/runme.log
+[Fri Apr 19 23:38:23 2024] Launched impl_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is already up-to-date
+[Fri Apr 19 23:40:33 2024] Launched synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/synth_1/runme.log
+[Fri Apr 19 23:40:33 2024] Launched impl_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2279.758 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183BB7E33A
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/impl_1/memory_read.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/impl_1/memory_read.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 23:44:40 2024...

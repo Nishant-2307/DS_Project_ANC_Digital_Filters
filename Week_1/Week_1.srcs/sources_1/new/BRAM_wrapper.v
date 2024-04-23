@@ -16,5 +16,4 @@ blk_mem_gen_0 your_instance_name (
 .douta(mem_out)
 );
 
-
 endmodule

@@ -1,0 +1,392 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Apr 20 19:22:51 2024
+# Process ID: 37504
+# Current directory: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15056 C:\Digital Filters\DS_Project_ANC_Digital_Filters\Basic Convolution\fir_trying.xpr
+# Log file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/vivado.log
+# Journal file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/nisha/OneDrive/Desktop/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/../../AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store'; using path 'C:/Users/nisha/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/board_store' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1163.656 ; gain = 493.398
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/OneDrive/Desktop/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/OneDrive/Desktop/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}}
+export_ip_user_files -of_objects  [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/OneDrive/Desktop/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/OneDrive/Desktop/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe}}
+export_ip_user_files -of_objects  [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Filters/Filters.sim/sim_1/behav/xsim/Noise_bits.coe' provided. It will be converted relative to IP Instance files '../../../../../Filters/Filters.sim/sim_1/behav/xsim/Noise_bits.coe'
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_2 -dir {c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Filters/Filters.sim/sim_1/behav/xsim/Noise_bits.coe}] [get_ips blk_mem_gen_2]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Filters/Filters.sim/sim_1/behav/xsim/Noise_bits.coe' provided. It will be converted relative to IP Instance files '../../../../../Filters/Filters.sim/sim_1/behav/xsim/Noise_bits.coe'
+generate_target {instantiation_template} [get_files {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_2'...
+generate_target all [get_files  {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_2'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_2'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_2'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_2] }
+export_ip_user_files -of_objects [get_files {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+launch_runs -jobs 10 blk_mem_gen_2_synth_1
+[Sat Apr 20 19:34:29 2024] Launched blk_mem_gen_2_synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/blk_mem_gen_2_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run blk_mem_gen_0_synth_1
+reset_run blk_mem_gen_1_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'c:/Xilinx/Vivado/2019.2/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'blk_mem_gen_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'blk_mem_gen_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+launch_runs impl_1 -jobs 10
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'c:/Xilinx/Vivado/2019.2/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'blk_mem_gen_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'blk_mem_gen_0'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Filters/Filters.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe' provided. It will be converted relative to IP Instance files '../../../../../Filters/Filters.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Filters/Filters.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Filters/Filters.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe' provided. It will be converted relative to IP Instance files '../../../../../Filters/Filters.sim/sim_1/behav/xsim/Hexadecimal_Numbers.coe'
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+launch_runs -jobs 10 blk_mem_gen_0_synth_1
+[Sat Apr 20 19:47:26 2024] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/blk_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'c:/Xilinx/Vivado/2019.2/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'blk_mem_gen_1'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'blk_mem_gen_1'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1'...
+ERROR: [Ipptcl 7-519] NULL COE Data pointer: Unable to open the file 
+ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'c:/Xilinx/Vivado/2019.2/data/ip/xilinx/blk_mem_gen_v8_4/hdl/mem_init_file.xit': ERROR: [Common 17-39] 'ipgui::get_coe_val' failed due to earlier errors.
+
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'blk_mem_gen_1'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'blk_mem_gen_1'. Failed to generate 'Vivado VHDL Synthesis' outputs: 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe' provided. It will be converted relative to IP Instance files '../../../../../../../Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe}] [get_ips blk_mem_gen_1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe' provided. It will be converted relative to IP Instance files '../../../../../../../Dig_Sys_proj/shit/shit.sim/sim_1/behav/xsim/try_smth.coe'
+generate_target all [get_files  {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_1'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}] -no_script -sync -force -quiet
+launch_runs -jobs 10 blk_mem_gen_1_synth_1
+[Sat Apr 20 19:51:41 2024] Launched blk_mem_gen_1_synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/blk_mem_gen_1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci}}] -directory {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files} -ipstatic_source_dir {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/modelsim} {questa=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/questa} {riviera=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/riviera} {activehdl=C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -jobs 10
+[Sat Apr 20 19:53:48 2024] Launched synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/runme.log
+[Sat Apr 20 19:53:49 2024] Launched impl_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1639.047 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2281.480 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 2281.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2281.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 2464.004 ; gain = 1081.527
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: convolution
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2464.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'convolution' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:125]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:110]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/.Xil/Vivado-37504-hp/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (2#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/.Xil/Vivado-37504-hp/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (8) of port connection 'douta' does not match port width (16) of module 'blk_mem_gen_1' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:149]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/.Xil/Vivado-37504-hp/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (3#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/.Xil/Vivado-37504-hp/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fir' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:23]
+	Parameter DATA_WIDTH bound to: 3 - type: integer 
+	Parameter N_FILTERS bound to: 1 - type: integer 
+	Parameter N_TAPS bound to: 3 - type: integer 
+	Parameter COEFF_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/.Xil/Vivado-37504-hp/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (4#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/.Xil/Vivado-37504-hp/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (3) of port connection 'addra' does not match port width (2) of module 'blk_mem_gen_0' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:48]
+INFO: [Synth 8-226] default block is never used [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:64]
+WARNING: [Synth 8-6014] Unused sequential element op_buffer_reg was removed.  [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (5#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'convolution' (6#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/fir2_imp.v:125]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2464.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2464.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2464.004 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'hell'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp' for cell 'tryy'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'hey2/your_instance_name'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2464.004 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc]
+WARNING: [Vivado 12-584] No ports matched 'in[2]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'in[1]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'in[0]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'in[1]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'in[2]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'in[0]'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc:18]
+Finished Parsing XDC File [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/fir2_const.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/convolution_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2543.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2543.414 ; gain = 79.410
+23 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2543.414 ; gain = 79.410
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Apr 20 19:58:56 2024] Launched impl_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795225A
+open_hw_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 3862.109 ; gain = 1212.453
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183795225A
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+[Sat Apr 20 21:15:58 2024] Launched synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/runme.log
+[Sat Apr 20 21:15:58 2024] Launched impl_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Apr 20 21:18:27 2024] Launched impl_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795225A
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183795225A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795225A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183795225A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795225A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_hw_manager
+close_design
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Sat Apr 20 21:58:34 2024] Launched impl_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Apr 20 22:00:42 2024] Launched synth_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/runme.log
+[Sat Apr 20 22:00:42 2024] Launched impl_1...
+Run output will be captured here: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795225A
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183795225A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795225A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/impl_1/convolution.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183795225A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 21 04:25:28 2024...

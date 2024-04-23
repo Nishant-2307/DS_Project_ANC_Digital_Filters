@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Apr 22 19:23:53 2024
+# Process ID: 67996
+# Current directory: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent70048 C:\Digital Filters\DS_Project_ANC_Digital_Filters\Week_1\Week_1.xpr
+# Log file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/vivado.log
+# Journal file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1154.324 ; gain = 468.078
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183795225A
+open_hw_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2449.152 ; gain = 1236.684
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/impl_1/memory_read.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_1/Week_1.runs/impl_1/memory_read.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183795225A
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 19:36:16 2024...
