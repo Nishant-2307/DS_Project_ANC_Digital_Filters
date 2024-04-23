@@ -16,8 +16,8 @@ def convert_txt_to_coe(input_file, output_file, radix=16, data_width=8):
             coe_file.write('\n')
 
 if __name__ == "__main__":
-    input_txt_file = "Coefficients.txt"  # Replace with the actual input text file
-    output_coe_file = "Coefficients.coe"  # Replace with the desired output .coe file
+    input_txt_file = "Signed_Band_Stop_Coefficients.txt"  # Replace with the actual input text file
+    output_coe_file = "Band_Stop_Coefficients.coe"  # Replace with the desired output .coe file
 
     convert_txt_to_coe(input_txt_file, output_coe_file)
     print(f"Conversion complete. Output saved to {output_coe_file}")
