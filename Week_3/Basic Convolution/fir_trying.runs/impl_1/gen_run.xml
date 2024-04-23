@@ -1,43 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1713880880">
-  <File Type="BITSTR-BMM" Name="wienerfilter_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="wienerfilter_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="wienerfilter_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="wienerfilter_power_routed.rpt"/>
   <File Type="PA-TCL" Name="wienerfilter.tcl"/>
-  <File Type="OPT-TIMING" Name="wienerfilter_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="wienerfilter_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="wienerfilter_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="wienerfilter_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="wienerfilter_reports.tcl"/>
+  <File Type="OPT-DCP" Name="wienerfilter_opt.dcp"/>
   <File Type="OPT-DRC" Name="wienerfilter_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="wienerfilter.hwdef"/>
   <File Type="PWROPT-DCP" Name="wienerfilter_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="wienerfilter_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="wienerfilter_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="wienerfilter_placed.dcp"/>
   <File Type="PLACE-IO" Name="wienerfilter_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="wienerfilter_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="wienerfilter_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="wienerfilter_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="wienerfilter_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="wienerfilter_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="wienerfilter_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="wienerfilter_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="wienerfilter_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="wienerfilter.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="wienerfilter_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="wienerfilter_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="wienerfilter_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="wienerfilter.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="wienerfilter_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="wienerfilter_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="wienerfilter_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="wienerfilter_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="wienerfilter_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="wienerfilter_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="wienerfilter_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="wienerfilter.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="wienerfilter_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="wienerfilter.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="wienerfilter_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="wienerfilter_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="wienerfilter_power_routed.rpx"/>
@@ -46,20 +35,13 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="wienerfilter_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="wienerfilter_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="wienerfilter_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="wienerfilter_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="wienerfilter_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="wienerfilter_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="wienerfilter_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="wienerfilter_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="wienerfilter_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="wienerfilter_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="wienerfilter_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="wienerfilter_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="wienerfilter_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="wienerfilter_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="wienerfilter_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="wienerfilter.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="wienerfilter_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="wienerfilter.rbt"/>
   <File Type="BITSTR-NKY" Name="wienerfilter.nky"/>
   <File Type="PDI-FILE" Name="wienerfilter.pdi"/>
@@ -68,7 +50,6 @@
   <File Type="RNPI_FILE" Name="wienerfilter.rnpi"/>
   <File Type="NPI_FILE" Name="wienerfilter.npi"/>
   <File Type="RBD_FILE" Name="wienerfilter.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="wienerfilter.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="wienerfilter.sysdef"/>
   <File Type="BG-BGN" Name="wienerfilter.bgn"/>
@@ -105,7 +86,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Users/nisha/OneDrive/Desktop/input_audio_samples.coe">
+    <File Path="$PPRDIR/../../../../Users/nisha/OneDrive/Desktop/input_audio_samples.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -117,7 +98,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Week_3/Low_Pass_Coefficients.coe">
+    <File Path="$PPRDIR/../Low_Pass_Coefficients.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -173,6 +154,7 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_1"/>

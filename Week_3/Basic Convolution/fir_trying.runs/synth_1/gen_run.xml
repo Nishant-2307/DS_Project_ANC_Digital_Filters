@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1713880880">
   <File Type="PA-TCL" Name="wienerfilter.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="wienerfilter_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="wienerfilter_reports.tcl"/>
   <File Type="RDS-RDS" Name="wienerfilter.vds"/>
   <File Type="RDS-UTIL" Name="wienerfilter_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="wienerfilter_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="wienerfilter.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="wienerfilter_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="wienerfilter_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/transmit.v">
@@ -39,7 +36,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../Users/nisha/OneDrive/Desktop/input_audio_samples.coe">
+    <File Path="$PPRDIR/../../../../Users/nisha/OneDrive/Desktop/input_audio_samples.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -51,7 +48,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Week_3/Low_Pass_Coefficients.coe">
+    <File Path="$PPRDIR/../Low_Pass_Coefficients.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
