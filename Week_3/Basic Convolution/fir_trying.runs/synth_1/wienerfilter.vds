@@ -1,0 +1,1115 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Apr 23 19:31:22 2024
+# Process ID: 43204
+# Current directory: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1
+# Command line: vivado.exe -log wienerfilter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wienerfilter.tcl
+# Log file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/wienerfilter.vds
+# Journal file: C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source wienerfilter.tcl -notrace
+Command: synth_design -top wienerfilter -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 40712 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1206.855 ; gain = 227.965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'wienerfilter' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:103]
+	Parameter N bound to: 47007 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider1' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider1' (1#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:89]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/.Xil/Vivado-43204-hp/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (2#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/.Xil/Vivado-43204-hp/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_1' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:133]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/.Xil/Vivado-43204-hp/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (3#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/.Xil/Vivado-43204-hp/realtime/blk_mem_gen_2_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (4) of module 'blk_mem_gen_2' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:142]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_6' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/.Xil/Vivado-43204-hp/realtime/blk_mem_gen_6_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_6' (4#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/.Xil/Vivado-43204-hp/realtime/blk_mem_gen_6_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_6' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:150]
+INFO: [Synth 8-6157] synthesizing module 'fir1' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:3]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter N_FILTERS bound to: 1 - type: integer 
+	Parameter N_TAPS bound to: 89 - type: integer 
+	Parameter COEFF_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/.Xil/Vivado-43204-hp/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (5#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/.Xil/Vivado-43204-hp/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-226] default block is never used [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:41]
+WARNING: [Synth 8-6014] Unused sequential element op_buffer_reg was removed.  [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'fir1' (6#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'transmit' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/transmit.v:6]
+INFO: [Synth 8-226] default block is never used [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/transmit.v:63]
+INFO: [Synth 8-4471] merging register 'flag_reg' into 'clear_reg' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/transmit.v:62]
+WARNING: [Synth 8-6014] Unused sequential element flag_reg was removed.  [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/transmit.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'transmit' (7#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/transmit.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wienerfilter' (8#1) [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:103]
+WARNING: [Synth 8-3331] design fir1 has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.453 ; gain = 303.562
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.453 ; gain = 303.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1282.453 ; gain = 303.562
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1282.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'hey2/your_instance_name'
+Finished Parsing XDC File [c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'hey2/your_instance_name'
+Parsing XDC File [c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'hell'
+Finished Parsing XDC File [c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'hell'
+Parsing XDC File [c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'tryy'
+Finished Parsing XDC File [c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'tryy'
+Parsing XDC File [c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6/blk_mem_gen_6_in_context.xdc] for cell 'bram'
+Finished Parsing XDC File [c:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6/blk_mem_gen_6_in_context.xdc] for cell 'bram'
+Parsing XDC File [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/trying.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/trying.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/trying.xdc:12]
+Finished Parsing XDC File [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/trying.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/trying.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/wienerfilter_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/constrs_1/new/trying.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/wienerfilter_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/wienerfilter_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1381.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1381.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1381.359 ; gain = 402.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1381.359 ; gain = 402.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for hey2/your_instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for hell. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for tryy. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bram. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1381.359 ; gain = 402.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1381.359 ; gain = 402.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 86    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 98    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module wienerfilter 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module fir1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 86    
+	                8 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 91    
+Module transmit 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[87][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[86][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[85][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[84][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[83][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[82][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[81][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[80][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[79][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[78][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[77][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[76][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[75][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[74][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[73][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[72][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[71][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[70][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[69][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[68][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[67][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[66][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[65][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[64][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[63][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[62][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[61][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[60][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[59][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[58][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[57][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[56][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[55][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[54][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[53][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[52][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[51][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[50][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[49][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[48][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[47][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[46][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[45][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[44][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[43][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[42][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[41][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[40][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[39][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[38][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[37][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[36][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[35][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[34][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[33][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[32][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[31][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[30][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[29][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[28][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[27][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[26][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[25][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[24][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[23][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[22][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[21][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[20][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[19][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[18][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[17][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[16][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[15][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[14][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[13][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[12][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[11][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[10][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[9][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[8][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[7][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/coeffs_reg[6][15:0]' into 'hey2/coeffs_reg[88][15:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:35]
+INFO: [Synth 8-4471] merging register 'hey2/buffer_reg[88][7:0]' into 'hey2/buffer_reg[88][7:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:52]
+INFO: [Synth 8-4471] merging register 'hey2/buffer_reg[88][7:0]' into 'hey2/buffer_reg[88][7:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:52]
+INFO: [Synth 8-4471] merging register 'hey2/genblk1[87].buffer_reg[87][7:0]' into 'hey2/genblk1[87].buffer_reg[87][7:0]' [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:61]
+INFO: [Synth 8-5861] Detected DSP filter cascade chain of length 89 exceeding device column height 60. Will break cascade connection in order to fit filter chain onto device [C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.srcs/sources_1/new/wienerfilter.v:61]
+DSP Report: Generating DSP hey2/output_data2, operation Mode is: A*B''.
+DSP Report: register hey2/genblk1[1].buffer_reg[1] is absorbed into DSP hey2/output_data2.
+DSP Report: register hey2/genblk1[0].buffer_reg[0] is absorbed into DSP hey2/output_data2.
+DSP Report: operator hey2/output_data2 is absorbed into DSP hey2/output_data2.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A2*B''.
+DSP Report: register in_reg is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/buffer_reg[88] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[0] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data89 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[2].buffer_reg[2] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[1].buffer_reg[1] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data3 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[3].buffer_reg[3] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[2].buffer_reg[2] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data4 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data5 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[5].buffer_reg[5] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[4].buffer_reg[4] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data6 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data7 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[7].buffer_reg[7] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[6].buffer_reg[6] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data8 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data9 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[9].buffer_reg[9] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[8].buffer_reg[8] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data10 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data11 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[11].buffer_reg[11] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[10].buffer_reg[10] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data12 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data13 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[13].buffer_reg[13] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[12].buffer_reg[12] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data14 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data15 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[15].buffer_reg[15] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[14].buffer_reg[14] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data16 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data17 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[17].buffer_reg[17] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[16].buffer_reg[16] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data18 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data19 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[19].buffer_reg[19] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[18].buffer_reg[18] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data20 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data21 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[21].buffer_reg[21] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[20].buffer_reg[20] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data22 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data23 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[23].buffer_reg[23] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[22].buffer_reg[22] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data24 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data25 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[25].buffer_reg[25] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[24].buffer_reg[24] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data26 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data27 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[27].buffer_reg[27] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[26].buffer_reg[26] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data28 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data29 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[29].buffer_reg[29] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[28].buffer_reg[28] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data30 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data31 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[31].buffer_reg[31] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[30].buffer_reg[30] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data32 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data33 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[33].buffer_reg[33] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[32].buffer_reg[32] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data34 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data35 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[35].buffer_reg[35] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[34].buffer_reg[34] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data36 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data37 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[37].buffer_reg[37] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[36].buffer_reg[36] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data38 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data39 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[39].buffer_reg[39] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[38].buffer_reg[38] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data40 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data41 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[41].buffer_reg[41] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[40].buffer_reg[40] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data42 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data43 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[43].buffer_reg[43] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[42].buffer_reg[42] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data44 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data45 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[45].buffer_reg[45] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[44].buffer_reg[44] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data46 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data47 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[47].buffer_reg[47] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[46].buffer_reg[46] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data48 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data49 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[49].buffer_reg[49] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[48].buffer_reg[48] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data50 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data51 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[51].buffer_reg[51] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[50].buffer_reg[50] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data52 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data53 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[53].buffer_reg[53] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[52].buffer_reg[52] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data54 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data55 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[55].buffer_reg[55] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[54].buffer_reg[54] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data56 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data57 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[57].buffer_reg[57] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[56].buffer_reg[56] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data58 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data59 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[59].buffer_reg[59] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[58].buffer_reg[58] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data60 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data61 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[61].buffer_reg[61] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[60].buffer_reg[60] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data62 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data63 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[63].buffer_reg[63] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[62].buffer_reg[62] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data64 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data65 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[65].buffer_reg[65] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[64].buffer_reg[64] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data66 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data67 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[67].buffer_reg[67] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[66].buffer_reg[66] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data68 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data69 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[69].buffer_reg[69] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[68].buffer_reg[68] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data70 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data71 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[71].buffer_reg[71] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[70].buffer_reg[70] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data72 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data73 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[73].buffer_reg[73] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[72].buffer_reg[72] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data74 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data75 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[75].buffer_reg[75] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[74].buffer_reg[74] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data76 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data77 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[77].buffer_reg[77] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[76].buffer_reg[76] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data78 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data79 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[79].buffer_reg[79] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[78].buffer_reg[78] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data80 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data81 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[81].buffer_reg[81] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[80].buffer_reg[80] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data82 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*BCIN.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data83 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A*B''.
+DSP Report: register hey2/genblk1[83].buffer_reg[83] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[82].buffer_reg[82] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data84 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A2*BCIN.
+DSP Report: register hey2/coeffs_reg[5] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data85 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A2*B''.
+DSP Report: register hey2/genblk1[85].buffer_reg[85] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[84].buffer_reg[84] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[4] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data86 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A2*BCIN.
+DSP Report: register hey2/coeffs_reg[3] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data87 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A2*B''.
+DSP Report: register hey2/genblk1[87].buffer_reg[87] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[86].buffer_reg[86] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[2] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data88 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is: PCIN+A2*BCIN.
+DSP Report: register hey2/coeffs_reg[1] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data89 is absorbed into DSP hey2/output_data1.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hey2/coeffs_reg[88][15] )
+INFO: [Synth 8-3886] merging instance 'sub_reg[0]' (FD) to 'sub_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_reg[1]' (FD) to 'sub_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sub_reg[2]' (FD) to 'sub_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sub_reg[3]' (FD) to 'sub_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_reg[4]' (FD) to 'sub_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sub_reg[5]' (FD) to 'sub_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sub_reg[6]' (FD) to 'sub_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1381.359 ; gain = 402.469
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP hey2/output_data2, operation Mode is (post resource management): A''*(B:0x0).
+DSP Report: register hey2/genblk1[1].buffer_reg[1] is absorbed into DSP hey2/output_data2.
+DSP Report: register hey2/genblk1[0].buffer_reg[0] is absorbed into DSP hey2/output_data2.
+DSP Report: operator hey2/output_data2 is absorbed into DSP hey2/output_data2.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*B''.
+DSP Report: register in_reg is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/buffer_reg[88] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[0] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data89 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): C+A*(B:0x0).
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data61 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[61].buffer_reg[61] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[60].buffer_reg[60] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data62 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[61].buffer_reg[61] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data63 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[63].buffer_reg[63] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[62].buffer_reg[62] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data64 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[63].buffer_reg[63] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data65 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[65].buffer_reg[65] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[64].buffer_reg[64] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data66 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[65].buffer_reg[65] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data67 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[67].buffer_reg[67] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[66].buffer_reg[66] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data68 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[67].buffer_reg[67] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data69 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[69].buffer_reg[69] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[68].buffer_reg[68] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data70 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[69].buffer_reg[69] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data71 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[71].buffer_reg[71] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[70].buffer_reg[70] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data72 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[71].buffer_reg[71] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data73 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[73].buffer_reg[73] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[72].buffer_reg[72] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data74 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[73].buffer_reg[73] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data75 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[75].buffer_reg[75] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[74].buffer_reg[74] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data76 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[75].buffer_reg[75] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data77 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[77].buffer_reg[77] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[76].buffer_reg[76] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data78 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[77].buffer_reg[77] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data79 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[79].buffer_reg[79] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[78].buffer_reg[78] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data80 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[79].buffer_reg[79] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data81 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A''*(B:0x0).
+DSP Report: register hey2/genblk1[81].buffer_reg[81] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[80].buffer_reg[80] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data82 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*(B:0x0).
+DSP Report: register hey2/genblk1[81].buffer_reg[81] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data83 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+(A:0x0)*B''.
+DSP Report: register hey2/genblk1[83].buffer_reg[83] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[82].buffer_reg[82] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data84 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*B2.
+DSP Report: register hey2/genblk1[83].buffer_reg[83] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[5] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data85 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*B''.
+DSP Report: register hey2/genblk1[85].buffer_reg[85] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[84].buffer_reg[84] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[4] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data86 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*B2.
+DSP Report: register hey2/genblk1[85].buffer_reg[85] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[3] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data87 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*B''.
+DSP Report: register hey2/genblk1[87].buffer_reg[87] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/genblk1[86].buffer_reg[86] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[2] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data88 is absorbed into DSP hey2/output_data1.
+DSP Report: Generating DSP hey2/output_data1, operation Mode is (post resource management): PCIN+A2*B2.
+DSP Report: register hey2/genblk1[87].buffer_reg[87] is absorbed into DSP hey2/output_data1.
+DSP Report: register hey2/coeffs_reg[1] is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data1 is absorbed into DSP hey2/output_data1.
+DSP Report: operator hey2/output_data89 is absorbed into DSP hey2/output_data1.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir1         | A*B''        | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|wienerfilter | PCIN+A2*B''  | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*BCIN  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A*B''   | 16     | 8      | -      | -      | 24     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A2*BCIN | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A2*B''  | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A2*BCIN | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A2*B''  | 16     | 8      | -      | -      | 24     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|fir1         | PCIN+A2*BCIN | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 1436.020 ; gain = 457.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 1438.316 ; gain = 459.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'hey2/genblk1[59].buffer_reg[59][0]__0' (FD) to 'hey2/genblk1[59].buffer_reg[59][0]'
+INFO: [Synth 8-3886] merging instance 'hey2/genblk1[59].buffer_reg[59][1]' (FD) to 'hey2/genblk1[59].buffer_reg[59][1]__0'
+INFO: [Synth 8-3886] merging instance 'hey2/genblk1[59].buffer_reg[59][2]' (FD) to 'hey2/genblk1[59].buffer_reg[59][2]__0'
+INFO: [Synth 8-3886] merging instance 'hey2/genblk1[59].buffer_reg[59][3]' (FD) to 'hey2/genblk1[59].buffer_reg[59][3]__0'
+INFO: [Synth 8-3886] merging instance 'hey2/genblk1[59].buffer_reg[59][4]' (FD) to 'hey2/genblk1[59].buffer_reg[59][4]__0'
+INFO: [Synth 8-3886] merging instance 'hey2/genblk1[59].buffer_reg[59][5]' (FD) to 'hey2/genblk1[59].buffer_reg[59][5]__0'
+INFO: [Synth 8-3886] merging instance 'hey2/genblk1[59].buffer_reg[59][6]' (FD) to 'hey2/genblk1[59].buffer_reg[59][6]__0'
+INFO: [Synth 8-3886] merging instance 'hey2/genblk1[59].buffer_reg[59][7]' (FD) to 'hey2/genblk1[59].buffer_reg[59][7]__0'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 1459.984 ; gain = 481.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.961 ; gain = 490.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.961 ; gain = 490.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.961 ; gain = 490.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.961 ; gain = 490.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.961 ; gain = 490.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.961 ; gain = 490.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|wienerfilter | hey2/genblk1[2].buffer_reg[2][7]   | 57     | 8     | NO           | NO                 | YES               | 0      | 16      | 
+|wienerfilter | hey2/genblk1[59].buffer_reg[59][0] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++-------------+------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_1 |         1|
+|2     |blk_mem_gen_2 |         1|
+|3     |blk_mem_gen_6 |         1|
+|4     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_0 |     1|
+|2     |blk_mem_gen_1 |     1|
+|3     |blk_mem_gen_2 |     1|
+|4     |blk_mem_gen_6 |     1|
+|5     |BUFG          |     1|
+|6     |CARRY4        |   394|
+|7     |DSP48E1       |    12|
+|8     |DSP48E1_1     |     6|
+|9     |DSP48E1_2     |     1|
+|10    |DSP48E1_4     |     1|
+|11    |DSP48E1_6     |    11|
+|12    |LUT1          |    48|
+|13    |LUT2          |    64|
+|14    |LUT3          |    24|
+|15    |LUT5          |    11|
+|16    |LUT6          |     8|
+|17    |SRL16E        |     8|
+|18    |SRLC32E       |    16|
+|19    |FDRE          |   387|
+|20    |FDSE          |     1|
+|21    |IBUF          |     4|
+|22    |OBUF          |     1|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------+---------+------+
+|      |Instance |Module   |Cells |
++------+---------+---------+------+
+|1     |top      |         |  1038|
+|2     |  hey2   |fir1     |   791|
+|3     |  uut    |transmit |    85|
++------+---------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.961 ; gain = 490.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:31 . Memory (MB): peak = 1468.961 ; gain = 391.164
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.961 ; gain = 490.070
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1479.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 425 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1479.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+149 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:40 . Memory (MB): peak = 1479.941 ; gain = 760.344
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1479.941 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Digital Filters/DS_Project_ANC_Digital_Filters/Basic Convolution/fir_trying.runs/synth_1/wienerfilter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file wienerfilter_utilization_synth.rpt -pb wienerfilter_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 19:32:16 2024...
