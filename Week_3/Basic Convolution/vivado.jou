@@ -11,3 +11,29 @@
 #-----------------------------------------------------------
 start_gui
 open_project {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_3/Basic Convolution/fir_trying.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_3/Basic Convolution/fir_trying.runs/impl_1/wienerfilter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_3/Basic Convolution/fir_trying.runs/impl_1/wienerfilter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+export_ip_user_files -of_objects  [get_files {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_3/Week_3/Low_Pass_Coefficients.coe}}] -no_script -reset -force -quiet
+remove_files  {{c:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_3/Week_3/Low_Pass_Coefficients.coe}}
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_3/Basic Convolution/fir_trying.runs/impl_1/wienerfilter.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Digital Filters/DS_Project_ANC_Digital_Filters/Week_3/Basic Convolution/fir_trying.runs/impl_1/wienerfilter.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
