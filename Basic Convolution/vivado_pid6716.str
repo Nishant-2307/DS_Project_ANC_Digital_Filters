@@ -140,3 +140,13 @@ dismissDialog("Open Project"); // bB (cr)
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 24447 ms. Increasing delay to 73341 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 66 ms. Decreasing delay to 2066 ms.
 // HMemoryUtils.trashcanNow. Engine heap size: 1,353 MB. GUI used memory: 78 MB. Current time: 4/23/24, 2:54:56 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  10022433 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2458 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1596 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,353 MB. GUI used memory: 73 MB. Current time: 4/23/24, 6:10:18 PM IST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10181 ms. Increasing delay to 30543 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3386 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 77 ms. Decreasing delay to 2077 ms.
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,353 MB. GUI used memory: 72 MB. Current time: 4/23/24, 6:40:17 PM IST
+// TclEventType: FILE_SET_CHANGE
