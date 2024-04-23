@@ -7,6 +7,6 @@
 - Adaptive Noise Cancellation (ANC) reduces unwanted background noise from audio in real-time. It uses microphones to capture desired signals and noise, adjusting an adaptive filter to predict and cancel noise. The error signal refines the filter, enhancing the desired audio signal
 in noisy environments.
 - We divided the project into specific weekly tasks and followed this breakdown. The following flowchart shows the general workflow:
-![workflow]("C:\Users\jiyad\Downloads\WhatsApp Image 2024-04-23 at 6.28.23 PM.jpeg")
+![workflow](workflow.jpeg)
 
 
